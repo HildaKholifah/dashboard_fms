@@ -13,10 +13,10 @@ const data = [
 
 export function CostPerKmChart({ height = 300 }: Props) {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-      <div className="mb-2">
-        <h3 className="text-gray-800 text-sm mb-1">Perbandingan Cost per KM</h3>
-        <p className="text-xs text-gray-500">Biaya operasional per minggu</p>
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <div className="mb-4">
+        <h3 className="text-gray-800 mb-1">Perbandingan Cost per KM</h3>
+        <p className="text-sm text-gray-500">Biaya operasional per minggu</p>
       </div>
       
       <ResponsiveContainer width="100%" height={height}>
@@ -63,7 +63,7 @@ export function CostPerKmChart({ height = 300 }: Props) {
         </BarChart>
       </ResponsiveContainer>
       
-      <div className="mt-2 space-y-1">
+      <div className="mt-4 space-y-2">
         <div className="flex items-center gap-4 text-xs">
           <div className="flex items-center gap-2">
             <div className="w-4 h-3 bg-blue-500 rounded"></div>

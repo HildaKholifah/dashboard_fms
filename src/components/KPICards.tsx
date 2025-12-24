@@ -20,9 +20,9 @@ function KPICard({ icon, title, actual, status, statusText, ideal, accentColor }
   const StatusIcon = statusConfig[status].icon;
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow">
-      <div className="flex items-start justify-between mb-3">
-        <div className={`text-3xl ${accentColor}`}>{icon}</div>
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+      <div className="flex items-start justify-between mb-4">
+        <div className={`text-4xl ${accentColor}`}>{icon}</div>
         <div className={`flex items-center gap-1 px-2 py-1 rounded ${statusConfig[status].bg} ${statusConfig[status].border} border`}>
           <StatusIcon className={`w-4 h-4 ${statusConfig[status].color}`} />
           <span className={`text-xs ${statusConfig[status].color}`}>{statusText}</span>
@@ -30,12 +30,12 @@ function KPICard({ icon, title, actual, status, statusText, ideal, accentColor }
       </div>
       
       <div className="mb-1">
-        <h3 className="text-gray-600 text-xs mb-1">{title}</h3>
-        <div className="text-sm mb-2">{actual}</div>
+        <h3 className="text-gray-600 text-sm mb-2">{title}</h3>
+        <div className="mb-3">{actual}</div>
       </div>
       
       <div className="text-xs text-gray-400">
-        Ideal: {ideal}
+        Nilai Ideal: {ideal}
       </div>
     </div>
   );
@@ -43,7 +43,7 @@ function KPICard({ icon, title, actual, status, statusText, ideal, accentColor }
 
 export function KPICards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
       <KPICard
         icon="⛽"
         title="FUEL EFFICIENCY"

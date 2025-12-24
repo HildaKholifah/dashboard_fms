@@ -10,10 +10,10 @@ const data = [
 
 export function UtilizationChart({ height = 300 }: Props) {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-      <div className="mb-2">
-        <h3 className="text-gray-800 text-sm mb-1">Tingkat Utilisasi Armada</h3>
-        <p className="text-xs text-gray-500">Distribusi status kendaraan</p>
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <div className="mb-4">
+        <h3 className="text-gray-800 mb-1">Tingkat Utilisasi Armada</h3>
+        <p className="text-sm text-gray-500">Distribusi status kendaraan</p>
       </div>
       
       <div className="relative w-full" style={{ height }}>
@@ -55,12 +55,12 @@ export function UtilizationChart({ height = 300 }: Props) {
         </div>
       </div>
       
-      <div className="mt-2 pt-2 border-t border-gray-100">
+      <div className="mt-4 pt-4 border-t border-gray-100">
         <div className="flex items-center justify-between text-xs">
           <span className="text-gray-600">Min. Target:</span>
           <span className="text-green-600">85%</span>
         </div>
-        <div className="mt-1 bg-green-50 border border-green-200 rounded px-2 py-1 text-xs text-green-700">
+        <div className="mt-2 bg-green-50 border border-green-200 rounded px-3 py-2 text-xs text-green-700">
           ✓ Melampaui target minimum (88% {'>'} 85%)
         </div>
       </div>
